@@ -24,9 +24,6 @@ public class ShowWindow2 {
         // close the window and exit the program
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // display the window - if you don't display the window, it will not display
-        // displaying the window is a boolean
-        window.setVisible(true);
         window.setLocation(550,400); // pixels from upper left corner
         window.getContentPane().setBackground(Color.getHSBColor(0.55f, 0.4f, 1.0f)); // 0-1 hue, saturation, brightness
 
@@ -48,6 +45,8 @@ public class ShowWindow2 {
         window.add(textField);
         window.add(myLabel2);
         window.add(textField2);
+        window.setLayout(null);
+        window.setVisible(true);
 
 
     }
