@@ -37,6 +37,9 @@ public class PersonHomework {
         System.out.println("             gender $"+assumeGender(adjustedRateGender));
         System.out.println("             age of vehicle $"+carAge(adjustedRateCarAge));
         System.out.println("             credit rating $"+creditFactor(adjustedRateCredit));
+        if (violations == true) {
+            System.out.println("             moving violations $400");
+        }
         System.out.println("Total Adjustments: $"+(ageFactor(adjustedRateAge)+assumeGender(adjustedRateGender)+carAge(adjustedRateCarAge)+creditFactor(adjustedRateCredit)));
         System.out.println("Total Monthly Premium for "+name+": $"+(getRate(monthlyRate)+(ageFactor(adjustedRateAge)+assumeGender(adjustedRateGender)+carAge(adjustedRateCarAge)+creditFactor(adjustedRateCredit))));
         System.out.println();
