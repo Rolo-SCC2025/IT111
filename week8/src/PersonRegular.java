@@ -9,7 +9,7 @@ public class PersonRegular {
         char firstPersonGender = 'F';
         char secondPersonGender = 'M';
         int firstPersonAge = 35;
-        int secondPersonAge = 21;
+        int secondPersonAge = 24;
         String firstPersonCar = "Ford Fiesta";
         String secondPersonCar = "Tesla Cybertruck";
         boolean firstPersonViolations = false;
