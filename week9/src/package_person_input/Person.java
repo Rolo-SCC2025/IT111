@@ -20,25 +20,7 @@ public class Person {
     double baselineRate = 300;
 
 
-    public void display() {
-        System.out.println("This is what you have entered:");
-        System.out.println("Name: " + name);
-        System.out.println("Gender: " + gender);
-        System.out.println("Age: " + age);
-        System.out.println("Zipcode: " + zipCode);
-        System.out.println();
-        System.out.println("Your baseline rate: $"+baselineRate);
-        System.out.println("Your baseline rate is calculated without taking into consideration of the following: Age, Credit Score, Violations, and Place of Residence.");
-        System.out.println();
-//        System.out.println("Age: ");
-        System.out.println("Credit Score: "+creditScore);
-//        System.out.println("Place of Residence: ");
-        System.out.println("Violations: "+violations);
-        System.out.println("DUI violations: "+violationsDUI);
-        System.out.println("Red Light violations: "+violationsRedLight);
-        System.out.println("Speeding violations: "+violationsSpeeding);
 
-    }
 
     public double getRate(double monthlyRate) {
 
@@ -91,4 +73,24 @@ public class Person {
         }
         return surcharge;
     }
+    public void display() {
+        System.out.println("This is what you have entered:");
+        System.out.println("Name: " + name);
+        System.out.println("Gender: " + gender);
+        System.out.println("Age: " + age);
+        System.out.println("Zipcode: " + zipCode);
+        System.out.println();
+        System.out.println("Your baseline rate: $"+baselineRate);
+        System.out.println("Your baseline rate is calculated without taking into consideration of the following: Age, Credit Score, Violations, and Place of Residence.");
+        System.out.println();
+//        System.out.println("Age: ");
+        System.out.println("Credit Score: "+creditScore);
+//        System.out.println("Place of Residence: ");
+        System.out.println("Violations: "+violations);
+        System.out.println("DUI violations: "+violationsDUI);
+        System.out.println("Red Light violations: "+violationsRedLight);
+        System.out.println("Speeding violations: "+violationsSpeeding);
+
+    }
+
 }
