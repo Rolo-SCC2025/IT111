@@ -61,6 +61,7 @@ public class dailySpecials {
 
         if (order.orderAmount == 0) {
             System.out.println("Looks like you don't like " + order.coffee[order.dayChoice] + "s. Have a nice day.");
+            System.exit(1);
         } else {
             if (order.orderAmount == 1) {
                 order.price[order.dayChoice] *= order.orderAmount;
