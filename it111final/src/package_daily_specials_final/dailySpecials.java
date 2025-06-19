@@ -96,7 +96,9 @@ public class dailySpecials {
         System.out.println("If you would like to leave a tip, please type true. If not, type false.");
         order.tipQuestion = input.nextBoolean();
 
-        if (order.tipQuestion && order.orderAmount <=3) { // smaller number of drinks, flat tip first option
+        if (order.tipQuestion == false) {
+
+        } else if (order.tipQuestion == true && order.orderAmount <=3) { // smaller number of drinks, flat tip first option
 
             System.out.println("Would you like to leave a flat tip? Type true or false.");
             order.tipType = input.nextBoolean();
@@ -110,7 +112,7 @@ public class dailySpecials {
                 order.tipPercentage = Math.abs(input.nextInt());
             }
 
-        } else {
+        } else if (order.tipQuestion == true) {
             System.out.println("Would you like to leave a percentage? Type true or false.");
             order.tipType = input.nextBoolean();
             System.out.println("All tips are divided among the baristas and are greatly appreciated. Thank you!");
